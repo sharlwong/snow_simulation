@@ -56,7 +56,8 @@ public class ExpCurve : MonoBehaviour {
 			{
 				fy = Amplitude * Mathf.Sin(t + mPhase) * Mathf.Cos(t + mPhase);
 				fz = AmplitudeZ * Mathf.Sin(t + mPhase) * Mathf.Cos(t + mPhase); 
-				mParticlesController.SetPosition(i, transform.position + new Vector3(dx*i, fy, fz));
+				//mParticlesController.SetPosition(i, transform.position + new Vector3(dx*i, fy, fz));
+				mParticlesController.SetPosition(i, transform.position + new Vector3(-fz, fy, -dx*i));
 				t += XIncrement*0.001f*Mathf.PI;
 				mParticlesController.SetScale(i, Width);
 			}
