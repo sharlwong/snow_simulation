@@ -26,7 +26,7 @@ public class ParticlesController : MonoBehaviour
 	ParticleSystem mPrSystem;
 	int mCurrCount = 0;
 	
-	static int MaxValueToHide = 10000;
+	static int MaxValueToHide = 5;
 	
 	private int mVertexCount = 0;
 	void Awake ()
