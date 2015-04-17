@@ -24,6 +24,8 @@ public class ExpCurve : MonoBehaviour {
 	public float PhaseIncrement = 0.17f;
 	public float Width = 1.54f;
 	
+	bool CompletedOnePeriod = false;
+	
 	// Use this for initialization
 	void Start () {
 		mParticlesController = GetComponent<ParticlesController>();
@@ -32,7 +34,12 @@ public class ExpCurve : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		mPhase += PhaseIncrement*Time.deltaTime*Mathf.PI;
-		if(mParticlesController.IsReadyToUse()) 
+		
+		if (mPhase > 6.11f && mPhase < 6.28f) { // 350 degrees to 360 degrees
+			CompletedOnePeriod = true;
+		}
+		
+		if(mParticlesController.IsReadyToUse() && !CompletedOnePeriod) 
 		{
 			timer += Time.deltaTime;
 			int particlesNum = mParticlesController.particleSystem.particleCount;
