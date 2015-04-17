@@ -70,7 +70,8 @@ public class ParticlesController : MonoBehaviour
 			}			
 		}
 		
-		mCurrCount = aCount < mPrSystem.particleCount ? aCount : mPrSystem.particleCount;		 		 		if(aCount > mPrSystem.particleCount) {
+		mCurrCount = aCount < mPrSystem.particleCount ? aCount : mPrSystem.particleCount;		 		 		
+		if(aCount > mPrSystem.particleCount) {
 			Debug.LogError("SetVertexCount(): vertex count > particles cache");
 		}
 	}

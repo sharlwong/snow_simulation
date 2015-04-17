@@ -35,8 +35,12 @@ public class ExpCurve : MonoBehaviour {
 	void Update () {
 		mPhase += PhaseIncrement*Time.deltaTime*Mathf.PI;
 		
-		if (mPhase > 6.11f && mPhase < 6.28f) { // 350 degrees to 360 degrees
+		if (mPhase > 2.11f && mPhase < 2.28f) { // 350 degrees to 360 degrees
 			CompletedOnePeriod = true;
+			mParticlesController.particleSystem.Clear();
+			mParticlesController.particleSystem.Stop(false);
+			//DestroyObject(this.particleSystem);
+
 		}
 		
 		if(mParticlesController.IsReadyToUse() && !CompletedOnePeriod) 
