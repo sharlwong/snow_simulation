@@ -140,6 +140,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 24800507}
   - 95: {fileID: 24800508}
+  - 136: {fileID: 24800509}
+  - 114: {fileID: 24800510}
   m_Layer: 0
   m_Name: Studio Pose OLAF
   m_TagString: Untagged
@@ -183,6 +185,30 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &24800509
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24800506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 85
+  m_Height: 280
+  m_Direction: 1
+  m_Center: {x: 65, y: -280, z: 130}
+--- !u!114 &24800510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 24800506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eefc90c04d2b24cff9ce104f88547833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &25910017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1251,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 331953053}
   - 137: {fileID: 331953054}
+  - 136: {fileID: 331953055}
+  - 54: {fileID: 331953057}
   m_Layer: 0
   m_Name: Polygon
   m_TagString: Untagged
@@ -1526,6 +1554,34 @@ SkinnedMeshRenderer:
     m_Center: {x: 0, y: 4.95157766, z: -4.35191536}
     m_Extent: {x: 4.28975916, y: 4.99960375, z: 5.13152504}
   m_DirtyAABB: 0
+--- !u!136 &331953055
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331953052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 5.13152552
+  m_Height: 9.9992075
+  m_Direction: 1
+  m_Center: {x: 0, y: 4.95157814, z: -4.35191536}
+--- !u!54 &331953057
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331953052}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &334561008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,7 +6086,6 @@ GameObject:
   - 143: {fileID: 1169156793}
   - 114: {fileID: 1169156792}
   - 114: {fileID: 1169156791}
-  - 45: {fileID: 1169156795}
   - 114: {fileID: 1169156797}
   - 82: {fileID: 1169156796}
   m_Layer: 0
@@ -6152,14 +6207,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
---- !u!45 &1169156795
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1169156789}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: 7e3669cf306c78f48a1f9affe08eb0f9, type: 2}
 --- !u!82 &1169156796
 AudioSource:
   m_ObjectHideFlags: 0
