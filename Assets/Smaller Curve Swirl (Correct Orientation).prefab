@@ -1138,7 +1138,7 @@ ParticleSystem:
     collisionMessages: 0
   SubModule:
     enabled: 1
-    subEmitterBirth: {fileID: 19801882}
+    subEmitterBirth: {fileID: 19845324, guid: 210e0035ccd996041b9a1ddf967cb16e, type: 2}
     subEmitterBirth1: {fileID: 0}
     subEmitterCollision: {fileID: 19801882}
     subEmitterCollision1: {fileID: 0}
@@ -2208,7 +2208,7 @@ ParticleSystemRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 7c98ffa948c8d43d5ac42a3e9f0ea897, type: 2}
+  - {fileID: 2100000, guid: 74bcba72c2286ce429281c86d5928418, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2217,7 +2217,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_RenderMode: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: .25
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
