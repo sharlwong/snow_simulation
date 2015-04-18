@@ -5,12 +5,13 @@ public class ChangeSnowType : MonoBehaviour {
 
 	public Material[] myMaterials = new Material[3];
 	int maxMaterials;
-	int arrayPos = 0;
+	int arrayPos;
 
 	// Use this for initialization
 	void Start ()
 	{
 		maxMaterials = myMaterials.Length-1;
+		arrayPos = 0;
 	}
 	
 	// Update is called once per frame
