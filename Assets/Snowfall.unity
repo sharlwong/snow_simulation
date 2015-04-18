@@ -5205,7 +5205,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1
+      scalar: .5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5267,7 +5267,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: 100
+    radius: 15
     angle: 1
     length: 5
     boxX: 1
@@ -5280,7 +5280,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 1000
+      scalar: 100
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -6102,7 +6102,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1087698714}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 23, z: 0}
+  m_LocalPosition: {x: 25, y: 23, z: 5}
   m_LocalScale: {x: 2.79999995, y: 2.79999995, z: 2.79999995}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6119,10 +6119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myMaterials:
-  - {fileID: 2100000, guid: 65836931803ab5b4fb9f60bd418f4100, type: 2}
   - {fileID: 2100000, guid: 7e3669cf306c78f48a1f9affe08eb0f9, type: 2}
   - {fileID: 2100000, guid: 74bcba72c2286ce429281c86d5928418, type: 2}
-  - {fileID: 2100000, guid: 74bcba72c2286ce429281c86d5928418, type: 2}
+  - {fileID: 2100000, guid: 65836931803ab5b4fb9f60bd418f4100, type: 2}
 --- !u!1 &1091978521
 GameObject:
   m_ObjectHideFlags: 0
@@ -12911,10 +12910,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1407478147}
   m_HandleRect: {fileID: 1825417026}
   m_Direction: 0
-  m_MinValue: 2
-  m_MaxValue: 1000
+  m_MinValue: 0
+  m_MaxValue: 300
   m_WholeNumbers: 0
-  m_Value: 200
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
