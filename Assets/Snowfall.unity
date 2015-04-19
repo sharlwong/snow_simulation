@@ -4216,7 +4216,7 @@ WindZone:
   m_Enabled: 1
   m_Mode: 0
   m_Radius: 20
-  m_WindMain: 10
+  m_WindMain: 1.5
   m_WindTurbulence: 1
   m_WindPulseMagnitude: .5
   m_WindPulseFrequency: .00999999978
@@ -6102,7 +6102,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1087698714}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 25, y: 23, z: 5}
+  m_LocalPosition: {x: 25, y: 24.7000008, z: 5}
   m_LocalScale: {x: 2.79999995, y: 2.79999995, z: 2.79999995}
   m_Children: []
   m_Father: {fileID: 0}
